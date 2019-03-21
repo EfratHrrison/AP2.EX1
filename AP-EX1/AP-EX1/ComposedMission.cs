@@ -34,6 +34,7 @@ namespace ex1
                     value = func(value);
                 } 
             }
+            //calculate the value
             OnCalculate?.Invoke(this, value);
             return value;
         }

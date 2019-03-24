@@ -22,14 +22,14 @@ namespace ex1
 
         public double Calculate(double value)
         {
-            double result = value;
+            double newVal = value;
             if(single != null)
             {
-                result = single(value);
+                newVal = single(value);
             }
 
-            OnCalculate?.Invoke(this, result);
-            return result;
+            OnCalculate?.Invoke(this, newVal);
+            return newVal;
         }
     }
 }
